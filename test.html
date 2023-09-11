@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Video Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a; /* Dark background color for night theme */
+            font-family: Arial, sans-serif;
+            color: #ffffff; /* White text color */
+        }
+
+        header {
+            background-color: #000000; /* Black header background */
+            padding: 20px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+            float: right;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video {
+            margin: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .download-button {
+            display: block;
+            background-color: #3498db; /* Blue download button */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        footer {
+            background-color: #000000; /* Black footer background */
+            padding: 20px;
+        }
+
+        .night-sky {
+            background-image: url('moon.png'); /* Moon image */
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position: top right;
+            position: relative;
+            height: 200px;
+        }
+
+        .night-sky::before {
+            content: "\f185"; /* Star icon */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: #ffffff;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+        }
+
+        .night-sky::after {
+            content: "\f0c2"; /* Cloud icon */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: #ffffff;
+            position: absolute;
+            top: 40px;
+            left: 80px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <h1>Night Video Gallery</h1>
+        <div class="video-gallery">
+            <div class="video">
+                <video controls>
+                    <source src="1.mp4" type="video/mp4">
+                </video>
+                <a href="video1.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="2.mp4" type="video/mp4">
+                </video>
+                <a href="video2.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="3.mp4" type="video/mp4">
+                </video>
+                <a href="3.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="4.mp4" type="video/mp4">
+                </video>
+                <a href="4.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="5.mp4" type="video/mp4">
+                </video>
+                <a href="5.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="6.mp4" type="video/mp4">
+                </video>
+                <a href="7.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="8.mp4" type="video/mp4">
+                </video>
+                <a href="8.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="9.mp4" type="video/mp4">
+                </video>
+                <a href="9.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="10.mp4" type="video/mp4">
+                </video>
+                <a href="10.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="11.mp4" type="video/mp4">
+                </video>
+                <a href="11.mp4" download class="download-button">Download</a>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="12.mp4" type="video/mp4">
+                </video>
+                <a href="12.mp4" download class="download-button">Download</a>
+            </div>
+            <!-- Add more videos here -->
+        </div>
+    </main>
+    <footer>
+        <div class="night-sky">
+            <!-- Add moon, stars, and clouds icons here -->
+        </div>
+    </footer>
+</body>
+</html>
